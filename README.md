@@ -6,11 +6,11 @@ This project is still a WIP and as such it doesn't have any kind of request's ra
 with a simple system to prevent users from constantly updating the page to increase the views count.  
 
 ## Endpoints
-### `GET /count?url=&lt;url&gt;`
-Increases the hits count for `&lt;url&gt;` and returns it as a number in the response body. 
+### `GET /count?url=<url>`
+Increases the hits count for `<url>` and returns it as a number in the response body. 
 
-### `GET /get?url=&lt;url&gt;`
-Returns the hits count for `&lt;url&gt;` without increasing it. 
+### `GET /get?url=<url>`
+Returns the hits count for `<url>` without increasing it. 
 
 ### `GET /status`
 Simply returns `Ok` if the service is still alive. If it's not your request will probably fail :P
@@ -60,6 +60,6 @@ $ docker-compose up -d
 - [x] Count hits of a URL
 - [ ] Return the number of hits of a URL
 - [ ] Return an SVG with the number of hits
-- [ ] Remove the use of `&lt;url&gt;` as a query parameter by parsing the source from the `Origin` header
+- [ ] Remove the use of `<url>` as a query parameter by parsing the source from the `Origin` header
 - [ ] Statistics
 - [ ] More...
